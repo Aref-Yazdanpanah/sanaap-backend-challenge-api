@@ -1,0 +1,6 @@
+-r base.txt
+ruff==0.14.3
+pytest==8.4.2
+pytest-django==4.11.1
+pytest-asyncio==1.2.0
+daphne==4.2.1

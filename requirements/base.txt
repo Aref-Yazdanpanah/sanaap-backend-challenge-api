@@ -1,0 +1,16 @@
+Django==5.2.7
+djangorestframework==3.16.1
+djangorestframework-simplejwt==5.5.1
+django-filter==25.2
+django-environ==0.12.0
+django-cors-headers==4.9.0
+drf-spectacular==0.28.0
+psycopg[binary]==3.2.12
+redis==5.2.1
+celery[redis]==5.5.3
+channels==4.3.1
+channels-redis==4.3.0
+uvicorn[standard]==0.38.0
+django-storages[s3]==1.14.6
+boto3==1.40.61
+python-magic==0.4.27
