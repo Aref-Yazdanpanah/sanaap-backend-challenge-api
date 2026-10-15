@@ -1,9 +1,61 @@
+# Environment variables
 .env
+.env.*
+!.env.example
+
+# Python virtual environments
 .venv/
+venv/
+ENV/
+
+# Python cache / bytecode
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Test / coverage / lint caches
 .pytest_cache/
 .ruff_cache/
-htmlcov/
+.mypy_cache/
 .coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Django generated files
 staticfiles/
+media/
+
+# Logs
+*.log
+logs/
+
+# Celery runtime files
+celerybeat-schedule
+celerybeat.pid
+
+# Local databases
+*.sqlite3
+db.sqlite3
+
+# IDE / editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+
+# Python packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
