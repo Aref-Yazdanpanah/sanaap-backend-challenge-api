@@ -59,6 +59,19 @@ production it must use HTTPS with a valid certificate.
 docker compose up --build
 ```
 
+The same local workflow is available through Make. Start the complete stack in
+the background with:
+
+```bash
+make local-stack-up
+```
+
+Stop it while preserving the PostgreSQL, Redis and MinIO volumes with:
+
+```bash
+make local-stack-down
+```
+
 Services are `postgres`, `redis`, `minio`, `minio_init`, `migrate`, `web`,
 `celery_worker` and `nginx`. PostgreSQL, Redis and MinIO use named volumes.
 `minio_init` idempotently creates a private bucket. `migrate` applies migrations,
